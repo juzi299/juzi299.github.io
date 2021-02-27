@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<script type="text/javascript">
+// 随机选取函bai数 参数为选取的数量
+function randomStr(num) {
+// 保存随机句子
+var strs = [
+'1',
+'2',
+'3',
+'4',
+'5',
+'6',
+'7',
+'8',
+'9'
+],
+text = '';
+// 需要选取的数量
+num = num > strs.length
+? strs.length
+: num;
+console.log(num)
+while (num--) {
+i = Math.floor(Math.random() * strs.length);
+console.log(i)
+text += '<p>' + strs[i] + '</p>'
+// 删除选中的数组下标，避免重复
+strs.splice(i, 1);
+}
+// 示例
+document.getElementById('demo').innerHTML = text;
+}
+window.onload = function () {
+randomStr(3);
+}
+</script>
+</head>
+<body>
+<div id="demo"></div>
+</body>
+</html>
