@@ -1,47 +1,30 @@
-<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Document</title>
-<script type="text/javascript">
-// 随机选取函bai数 参数为选取的数量
-function randomStr(num) {
-// 保存随机句子
-var strs = [
-'1',
-'2',
-'3',
-'4',
-'5',
-'6',
-'7',
-'8',
-'9'
-],
-text = '';
-// 需要选取的数量
-num = num > strs.length
-? strs.length
-: num;
-console.log(num)
-while (num--) {
-i = Math.floor(Math.random() * strs.length);
-console.log(i)
-text += '<p>' + strs[i] + '</p>'
-// 删除选中的数组下标，避免重复
-strs.splice(i, 1);
-}
-// 示例
-document.getElementById('demo').innerHTML = text;
-}
-window.onload = function () {
-randomStr(3);
-}
-</script>
+<title>随机文bai字du</title>
 </head>
 <body>
-<div id="demo"></div>
+<script language="JavaScript">
+<!zhi-- Hide
+var a = Math.random() + ""
+var rand1 = a.charAt(5)
+quotes = new Array
+quotes[1] = '文字一'
+quotes[2] = '文字二'
+quotes[3] = '文字三'
+quotes[4] = '文字四dao'
+quotes[5] = '文字五'
+quotes[6] = '文字六zhuan'
+quotes[7] = '文字七'
+quotes[8] = '文字八'
+quotes[9] = '文字九'
+quotes[0] = '文字十'
+var quote = quotes[rand1]
+//-->
+</script>
+<script language="JavaScript">
+<!-- Hide
+document.write( quote )
+//-->
+</script>
 </body>
 </html>
